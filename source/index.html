@@ -10,8 +10,22 @@
         <img src="#" width="34" height="38" alt="Логотип кэт энерджи">
       </a>
       <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Закрыть главное меню</span>
+        </button>
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Главное меню</span>
+          <span class="visually-hidden">Открыть главное меню</span>
         </button>
       </nav>
     </header>
@@ -90,14 +104,14 @@
             <img src="#" width="251" height="240" alt="Стройный кот">
           </div>
           <div class="changes-toggle">
-            Было
+            <button class="changes-toggle__it-was-button" type="button">Было</button>
             <div class="changes-toggle__wrapper">
               <div class="changes-toggle__it-was"></div>
             </div>
             <div class="changes-toggle__wrapper">
               <div class="changes-toggle__became"></div>
             </div>
-            Стало
+            <button class="changes-toggle__became-button" type="button">Стало</button>
           </div>
         </div>
       </section>
@@ -148,13 +162,5 @@
         </section>
       </div>
     </footer>
-    <section class="popap-menu">
-      <ul class="popap-menu__list">
-        <li class="popap-menu__item"><a href="#" class="popap-menu__link">Главная</a></li>
-        <li class="popap-menu__item"><a href="#" class="popap-menu__link">Каталог продукции</a></li>
-        <li class="popap-menu__item"><a href="#" class="popap-menu__link">Подбор программы</a></li>
-      </ul>
-      <button class="popap-menu__close" type="button"></button>
-    </section>
   </body>
 </html>
