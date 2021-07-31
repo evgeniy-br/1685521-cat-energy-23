@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -36,15 +37,15 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="name">Имя:<sup>*</sup></label>
-                <input class="form__control" type="text" id="name" name="name" placeholder="Барсик" required>
+                <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="weight">Вес:<sup>*</sup></label>
-                <input class="form__control" type="text" id="weight" name="weight" placeholder="7" required>
+                <input class="form__control form__control--text" type="text" id="weight" name="weight" placeholder="7" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="age">Возраст(лет):</label>
-                <input class="form__control" type="text" id="age" name="age" placeholder="7">
+                <input class="form__control form__control--text" type="text" id="age" name="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -69,17 +70,17 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="email">e-mail:<sup>*</sup></label>
-                <input class="form__control" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="form__control form__control--text" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="form__control" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__control form__control--text" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Комментарий</legend>
-            <textarea class="form__control" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__control form__control--text" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Дополнительно</legend>
@@ -106,7 +107,7 @@
           <button class="form-button" type="submit">Отправить заявку</button>
         </form>
       </section>
-    <section class="map">
+    <section class="map map--background">
       <h2 class="visually-hidden">Как до нас добраться?</h2>
       <div class="wrapper">
         <div class="contacts">

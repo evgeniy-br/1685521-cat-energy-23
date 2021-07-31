@@ -1,0 +1,78 @@
+// Form global
+
+.form__fieldset {
+  border: none;
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__control--error {
+  outline: 2px solid @input-border-error;
+  outline-offset: -2px;
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: @basic-black;
+}
+
+.form__control::placeholder {
+  color: @special-extra-dark;
+}
+
+// Form radio
+
+.form__control--radio:disabled {
+  color: @special-dark-color-opacity;
+}
+
+// Form checkbox
+
+.form__label--checkbox {
+  color: @basic-black;
+}
+
+.form__control--checkbox:disabled {
+  color: @basic-black-extra-opacity;
+}
+
+// Form text
+
+.form__text {
+  line-height: 16px;
+  color: @basic-black;
+}
+
+.form__control--text {
+  text-transform: uppercase;
+  border: 1px solid @special-neutral-dark;
+  font-size: 16px;
+}
+
+.form__control--text:focus {
+  outline: 2px solid @special-extra-dark;
+  outline-offset: -2px;
+}
+
+.form__control--text:hover {
+  border: 1px solid @special-light-neutral;
+}
+
+// Button form
+
+.form-button {
+  .button-color();
+  border: none;
+}
+
+.form-button:active {
+  .button-active();
+}
+
+.form-button:hover {
+  .button-hover();
+}

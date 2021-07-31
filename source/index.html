@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -27,12 +28,11 @@
       </nav>
     </header>
     <main class="main-content">
-      <h1 class="main-content__title">Функциональное питание для котов</h1>
       <section class="nutrition-programs">
         <div class="wrapper">
-          <h2 class="visually-hidden">Подбор программы питания для кота</h2>
+          <h1 class="nutrition-programs__title">Функциональное питание для котов</h1>
           <p class="nutrition-programs__text">Занялся собой? Займись котом!</p>
-          <a href="form.html">Подобрать программу</a>
+          <a class="nutrition-programs__link" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="catalog-link">
@@ -103,10 +103,7 @@
           <div class="changes-toggle">
             <button class="changes-toggle__it-was-button" type="button">Было</button>
             <div class="changes-toggle__wrapper">
-              <div class="changes-toggle__it-was"></div>
-            </div>
-            <div class="changes-toggle__wrapper">
-              <div class="changes-toggle__became"></div>
+              <div class="changes-toggle__it-was changes-toggle__became"></div>
             </div>
             <button class="changes-toggle__became-button" type="button">Стало</button>
           </div>
@@ -154,8 +151,7 @@
         </section>
         <section class="page-footer__copyright copyright">
           <h2 class="visually-hidden">Разработчик сайта</h2>
-          <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <p class="copyright__text"><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
         </section>
       </div>
     </footer>
