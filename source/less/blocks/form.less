@@ -1,0 +1,89 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__list {
+  .dropping-list();
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__control--error {
+  outline: 2px solid @input-border-error;
+  outline-offset: -2px;
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: @basic-black;
+}
+
+.form__control::placeholder {
+  color: @special-extra-dark;
+}
+
+// Form radio
+
+.form__label--radio {
+  color: @special-dark-color;
+}
+
+.form__control--radio:disabled {
+  color: @special-dark-color-opacity;
+}
+
+// Form checkbox
+
+.form__label--checkbox {
+  color: @basic-black;
+}
+
+.form__control--checkbox:disabled {
+  color: @basic-black-extra-opacity;
+}
+
+// Form text
+
+.form__text {
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  color: @basic-black;
+}
+
+.form__control--text {
+  text-transform: uppercase;
+  border: 1px solid @special-neutral-dark;
+  font-size: 16px;
+}
+
+.form__control--text:focus {
+  outline: 2px solid @special-extra-dark;
+  outline-offset: -2px;
+}
+
+.form__control--text:hover {
+  border: 1px solid @special-light-neutral;
+}
+
+// Button form
+
+.form__button {
+  color: @basic-white;
+  background-color: @basic-green;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button:active {
+  .button-active();
+}
+
+.form__button:hover {
+  .button-hover();
+}
