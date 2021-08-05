@@ -1,0 +1,24 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desctop-width) {
+    display: none;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

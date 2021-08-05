@@ -2,14 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="#" width="34" height="38" alt="Логотип кэт энерджи">
-      </a>
+    <header class="page-header wrapper">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть главное меню</span>
+        </button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -22,9 +28,6 @@
             <a href="form.html" class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть главное меню</span>
-        </button>
       </nav>
     </header>
     <main class="main-content">
@@ -70,7 +73,7 @@
         </div>
       </section>
       <section class="result-program">
-        <div class="wrapper">
+        <div class="result-program__wrapper wrapper">
           <h2 class="result-program__title">Живой пример</h2>
           <p class="result-program__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="result-program__list result-program-list">
@@ -99,13 +102,13 @@
           <div class="result-program__images">
             <img src="#" width="311" height="232" alt="Кот с лишним весом">
             <img src="#" width="251" height="240" alt="Стройный кот">
-          </div>
-          <div class="changes-toggle">
-            <button class="changes-toggle__it-was-button" type="button">Было</button>
-            <div class="changes-toggle__wrapper">
-              <div class="changes-toggle__it-was changes-toggle__became"></div>
+            <div class="changes-toggle">
+              <button class="changes-toggle__it-was-button" type="button">Было</button>
+              <div class="changes-toggle__wrapper">
+                <div class="changes-toggle__it-was changes-toggle__became"></div>
+              </div>
+              <button class="changes-toggle__became-button" type="button">Стало</button>
             </div>
-            <button class="changes-toggle__became-button" type="button">Стало</button>
           </div>
         </div>
       </section>
