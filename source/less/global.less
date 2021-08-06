@@ -23,11 +23,26 @@
   overflow: hidden;
 }
 
+// Other styles
+
 a {
   text-decoration: none;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 1220px;
+  }
 }

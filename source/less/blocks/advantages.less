@@ -7,8 +7,18 @@
 
 .advantages__list {
   .dropping-list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
   font-family: "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    margin-bottom: 37px;
+  }
 }
