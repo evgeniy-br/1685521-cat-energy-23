@@ -1,3 +1,22 @@
 .main-catalog__list {
   .dropping-list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
+.main-catalog__item {
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    margin-right: 60px;
+  }
+}
+
+.main-catalog__item:nth-of-type(even) {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+

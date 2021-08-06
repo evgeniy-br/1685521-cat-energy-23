@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="#" width="34" height="38" alt="Логотип кэт энерджи">
-      </a>
+    <header class="page-header wrapper">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="#" width="34" height="38" alt="Логотип кэт энерджи">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть главное меню</span>
+        </button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -23,9 +28,6 @@
             <a href="form.html" class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть главное меню</span>
-        </button>
       </nav>
     </header>
     <main class="product-catalog wrapper">
@@ -201,12 +203,12 @@
             </dl>
             <a class="button-order" href="#">Заказать</a>
           </li>
+          <li class="main-catalog__item main-catalog-more">
+            <h3 class="main-catalog-more__title">Показать еще 100500 товаров</h3>
+            <p class="main-catalog-more__text">На самом деле вкусов гораздо больше!</p>
+            <a class="main-catalog-more__link" href="#">Показать все</a>
+          </li>
         </ul>
-        <div class="main-catalog__more main-catalog-more">
-          <h3 class="main-catalog-more__title">Показать еще 100500 товаров</h3>
-          <p class="main-catalog-more__text">На самом деле вкусов гораздо больше!</p>
-          <a class="main-catalog-more__link" href="#">Показать все</a>
-        </div>
       </section>
       <section class="additional-catalog">
         <h2 class="additional-catalog__title">Дополнительные товары</h2>
