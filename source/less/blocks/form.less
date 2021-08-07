@@ -1,7 +1,6 @@
 .form {
   @media (min-width: @desctop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -47,19 +46,32 @@
 
 // Form fieldset mod
 
-.form__fieldset:nth-of-type(3) {
+.form__fieldset-wrapper {
+  @media (min-width: @desctop-width) {
+    grid-area: ~ "1 / 1 / 2 / -1";
+    display: flex;
+  }
+}
+
+.form__fieldset-wrapper .form__fieldset {
+  @media (min-width: @desctop-width) {
+    width: 568px;
+  }
+}
+
+.form .form__fieldset:nth-of-type(1) {
   @media (min-width: @desctop-width) {
     grid-area: ~ "2 / 1 / 3 / -1";
   }
 }
 
-.form__fieldset:nth-of-type(4) {
+.form .form__fieldset:nth-of-type(2) {
   @media (min-width: @desctop-width) {
     grid-area: ~ "3 / 1 / 4 / -1";
   }
 }
 
-.form__fieldset:nth-of-type(5) {
+.form .form__fieldset:nth-of-type(3) {
   @media (min-width: @desctop-width) {
     grid-area: ~ "4 / 1 / 5 / -1";
   }
@@ -67,7 +79,7 @@
 
 // Form list mod
 
-.form__fieldset:nth-of-type(3) .form__list {
+.form__fieldset:nth-of-type(1) .form__list--contacts {
   @media (min-width: @desctop-width) {
     display: flex;
   }
