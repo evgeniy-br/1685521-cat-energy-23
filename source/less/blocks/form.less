@@ -1,3 +1,9 @@
+.form {
+  @media (min-width: @desctop-width) {
+    display: grid;
+  }
+}
+
 .form__fieldset {
   border: none;
 }
@@ -11,22 +17,86 @@
   text-transform: uppercase;
 }
 
-.form__control--error {
-  outline: 2px solid @input-border-error;
-  outline-offset: -2px;
-}
-
 .form__legend {
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
 }
 
+.form__button-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.form__button {
+  color: @basic-white;
+  background-color: @basic-green;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__text {
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  color: @basic-black;
+}
+
+// Form fieldset mod
+
+.form__fieldset-wrapper {
+  @media (min-width: @desctop-width) {
+    grid-area: ~ "1 / 1 / 2 / -1";
+    display: flex;
+  }
+}
+
+.form__fieldset-wrapper .form__fieldset {
+  @media (min-width: @desctop-width) {
+    width: 568px;
+  }
+}
+
+.form .form__fieldset:nth-of-type(1) {
+  @media (min-width: @desctop-width) {
+    grid-area: ~ "2 / 1 / 3 / -1";
+  }
+}
+
+.form .form__fieldset:nth-of-type(2) {
+  @media (min-width: @desctop-width) {
+    grid-area: ~ "3 / 1 / 4 / -1";
+  }
+}
+
+.form .form__fieldset:nth-of-type(3) {
+  @media (min-width: @desctop-width) {
+    grid-area: ~ "4 / 1 / 5 / -1";
+  }
+}
+
+// Form list mod
+
+.form__fieldset:nth-of-type(1) .form__list--contacts {
+  @media (min-width: @desctop-width) {
+    display: flex;
+  }
+}
+
+// Form control mod
+
+.form__control--error {
+  outline: 2px solid @input-border-error;
+  outline-offset: -2px;
+}
+
 .form__control::placeholder {
   color: @special-extra-dark;
 }
 
-// Form radio
+// Form radio mod
 
 .form__label--radio {
   color: @special-dark-color;
@@ -36,7 +106,14 @@
   color: @special-dark-color-opacity;
 }
 
-// Form checkbox
+// Form checkbox mod
+
+.form__list--checkbox {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .form__label--checkbox {
   color: @basic-black;
@@ -46,13 +123,19 @@
   color: @basic-black-extra-opacity;
 }
 
-// Form text
-
-.form__text {
-  font-family: "Arial", sans-serif;
-  line-height: 16px;
-  color: @basic-black;
+.form__item--checkbox {
+  @media (min-width: @tablet-width) {
+    width: 221px;
+  }
 }
+
+.form__item--checkbox:not(:nth-of-type(even)) {
+  @media (min-width: @tablet-width) {
+    margin-right: 123px;
+  }
+}
+
+// Form text mod
 
 .form__control--text {
   text-transform: uppercase;
@@ -69,16 +152,7 @@
   border: 1px solid @special-light-neutral;
 }
 
-// Button form
-
-.form__button {
-  color: @basic-white;
-  background-color: @basic-green;
-  text-transform: uppercase;
-  border: none;
-  font-size: 16px;
-  line-height: 20px;
-}
+// Button form mod
 
 .form__button:active {
   .button-active();
