@@ -1,9 +1,39 @@
-.copyright__text {
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    padding-bottom: 37px;
+  }
+}
+
+.copyright__text-link {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  color: @special-extra-dark;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 22px;
+  }
 }
 
 .copyright__link {
+  order: 2;
   color: @basic-black;
+
+  &:hover path {
+    fill: @basic-green;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }

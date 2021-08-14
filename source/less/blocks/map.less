@@ -1,3 +1,20 @@
+.map {
+  @media (min-width: @desctop-width) {
+    position: relative;
+  }
+}
+
 .map--background {
   background-color: @basic-extra-light;
+}
+
+.map__img {
+  display: block;
+  width: 320px;
+  height: 362px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }

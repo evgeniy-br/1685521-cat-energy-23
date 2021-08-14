@@ -1,17 +1,35 @@
 .changes-toggle {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+
+  @media (min-width: @desctop-width) {
+    padding-top: 137px;
+    padding-bottom: 67px;
+    padding-left: 18px;
+  }
 }
 
 .changes-toggle__wrapper {
   background: @basic-white;
   border: 1px solid @special-light-neutral;
   border-radius: 6px;
+  width: 84px;
+  height: 14px;
 }
 
 .changes-toggle__it-was,
 .changes-toggle__became {
   background: @basic-green;
   border-radius: 6px;
+  width: 35px;
+  height: 6px;
+  margin: 3px 6px;
+}
+
+.changes-toggle__became {
+  margin-left: auto;
 }
 
 .changes-toggle__it-was-button,
@@ -22,4 +40,23 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  margin-left: 11px;
+  margin-right: 11px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 14px;
+    margin-right: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 45px;
+      border-bottom: 1px dashed @basic-black-extra-opacity;
+      bottom: 0;
+      right: 8px;
+    }
+  }
 }
