@@ -1,7 +1,7 @@
 .catalog-item {
   background-color: @basic-extra-light;
   margin-bottom: 21px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 29px;
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desctop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 72px;
     padding-bottom: 59px;
     width: 570px;
   }
@@ -97,7 +97,7 @@
   padding: 0 20px;
   padding-bottom: 24px;
   color: @basic-black;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   &::after {
     content: "";
@@ -144,12 +144,17 @@
     height: 12px;
     background-image: url("../img/program-select-icon/program-pro-icon-arrow.svg");
     background-repeat: no-repeat;
-    right: -1px;
-    top: 8px;
+    right: -2px;
+    top: 6px;
 
     @media (min-width: @tablet-width) {
       top: 8px;
       right: -10px;
+    }
+
+    @media (min-width: @desctop-width) {
+      top: 8px;
+      right: -12px;
     }
   }
 

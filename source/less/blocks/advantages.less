@@ -33,6 +33,7 @@
 .advantages__list {
   .dropping-list();
   padding-bottom: 46px;
+  counter-reset: myCounter;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -67,7 +68,7 @@
     }
   }
 
-  &:nth-child(2)::before {
+  &.advantages__item--powder::before {
     background-image: url("../img/icon-presentation/powder-mob.svg");
 
     @media (min-width: @tablet-width) {
@@ -76,7 +77,7 @@
     }
   }
 
-  &:nth-child(3)::before {
+  &.advantages__item--cutlery::before {
     background-image: url("../img/icon-presentation/cutlery-mob.svg");
 
     @media (min-width: @tablet-width) {
@@ -85,7 +86,7 @@
     }
   }
 
-  &:nth-child(4)::before {
+  &.advantages__item--time::before {
     background-image: url("../img/icon-presentation/time-mob.svg");
 
     @media (min-width: @tablet-width) {
@@ -111,7 +112,8 @@
     }
 
     &::after {
-      content: "1";
+      counter-increment: myCounter;
+      content: counter(myCounter);
       position: absolute;
       font-size: 280px;
       line-height: 280px;
@@ -127,7 +129,6 @@
     }
 
     &:nth-child(2)::after {
-      content: "2";
       right: 80px;
 
       @media (min-width: @desctop-width) {
@@ -136,7 +137,6 @@
     }
 
     &:nth-child(3)::after {
-      content: "3";
       right: 79px;
 
       @media (min-width: @desctop-width) {
@@ -145,7 +145,6 @@
     }
 
     &:nth-child(4)::after {
-      content: "4";
       right: 75px;
 
       @media (min-width: @desctop-width) {
@@ -163,7 +162,7 @@
       margin-right: 80px;
     }
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }
