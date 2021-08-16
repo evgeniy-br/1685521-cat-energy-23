@@ -7,28 +7,47 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header wrapper">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo-icon" href="index.html">
-          <img src="#" width="34" height="38" alt="Логотип кэт энерджи">
+    <header class="page-header">
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo-icon" href="#">
+          <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
         </a>
+        <a class="page-header__logo-icon-text" href="#">
+          <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть главное меню</span>
         </button>
-      </div>
-      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
+            <a href="#" class="main-nav__link main-nav__link--active-page">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--active-page">Подбор программы</a>
+            <a href="form.html" class="main-nav__link main-nav__link--active-page">Подбор программы</a>
           </li>
         </ul>
       </nav>
+      <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
     </header>
     <main class="main-form">
       <div class="wrapper">
@@ -42,16 +61,16 @@
             <fieldset class="form__fieldset">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__label" for="name">Имя:<sup>*</sup></label>
+                  <label class="form__label form__label--text" for="name">Имя:<sup>*</sup></label>
                   <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required>
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="weight">Вес:<sup>*</sup></label>
-                  <input class="form__control form__control--text" type="text" id="weight" name="weight" placeholder="7" required>
+                  <label class="form__label form__label--text form__label--text-weight" for="weight">Вес(КГ):<sup>*</sup></label>
+                  <input class="form__control form__control--text form__control--text-weight" type="text" id="weight" name="weight" placeholder="7" required>
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="age">Возраст(лет):</label>
-                  <input class="form__control form__control--text" type="text" id="age" name="age" placeholder="7">
+                  <label class="form__label form__label--text form__label--text-age" for="age">Возраст(лет):</label>
+                  <input class="form__control form__control--text form__control--text-age" type="text" id="age" name="age" placeholder="7">
                 </li>
               </ul>
             </fieldset>

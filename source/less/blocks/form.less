@@ -1,4 +1,6 @@
 .form {
+  position: relative;
+
   @media (min-width: @desctop-width) {
     display: grid;
   }
@@ -6,6 +8,36 @@
 
 .form__fieldset {
   border: none;
+  padding: 0;
+}
+
+.form__control--text {
+  text-transform: uppercase;
+  border: 1px solid @special-neutral-dark;
+  font-size: 16px;
+  padding: 13px 15px 14px;
+  width: 229px;
+  margin-bottom: 13px;
+}
+
+.form__control--text-weight {
+  width: 204px;
+}
+
+.form__control--text-age {
+  width: 172px;
+}
+
+.form__label--text {
+  margin-right: 7px;
+}
+
+.form__label--text-weight {
+  margin-right: 14px;
+}
+
+.form__label--text-age {
+  margin-right: 11px;
 }
 
 .form__list {
@@ -60,6 +92,15 @@
 }
 
 .form .form__fieldset:nth-of-type(1) {
+  padding-bottom: 27px;
+
+  &::before {
+    .gray-line();
+    right: 0;
+    left: 0;
+    top: 193px;
+  }
+
   @media (min-width: @desctop-width) {
     grid-area: ~ "2 / 1 / 3 / -1";
   }
@@ -136,12 +177,6 @@
 }
 
 // Form text mod
-
-.form__control--text {
-  text-transform: uppercase;
-  border: 1px solid @special-neutral-dark;
-  font-size: 16px;
-}
 
 .form__control--text:focus {
   outline: 2px solid @special-extra-dark;
