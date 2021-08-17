@@ -1,4 +1,21 @@
 .result-program {
+  @media (min-width: @desctop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      min-height: 462px;
+      background-image: linear-gradient(to right, @basic-extra-light 72.5%, @special-light 72.5%);
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -2;
+    }
+  }
+}
+
+.result-program__box {
   background-color: @special-light;
   padding-bottom: 35px;
 
@@ -21,7 +38,6 @@
   }
 
   @media (min-width: @desctop-width) {
-    position: relative;
     display: grid;
     grid-template-columns: 610px 635px;
     grid-template-rows: 195px 403px;
@@ -130,8 +146,20 @@
   }
 
   @media (min-width: @desctop-width) {
+    position: relative;
     background-color: transparent;
     grid-area: ~ "1 / 2 / -1 / -1";
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 310px;
+      min-height: 462px;
+      background-color: @special-light;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
   }
 }
 

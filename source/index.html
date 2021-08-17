@@ -8,30 +8,32 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper wrapper">
-        <a class="page-header__logo-icon" href="#">
-          <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
-        </a>
-        <a class="page-header__logo-icon-text" href="#">
-          <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
-        </a>
+      <div class="page-header__box">
+        <div class="page-header__wrapper wrapper">
+          <a class="page-header__logo-icon" href="#">
+            <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+          </a>
+          <a class="page-header__logo-icon-text" href="#">
+            <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть главное меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link main-nav__link--active-page">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть главное меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--active-page">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
       <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');
@@ -55,7 +57,6 @@
           <h1 class="nutrition-programs__title">Функциональное питание для котов</h1>
           <p class="nutrition-programs__text">Занялся собой? Займись котом!</p>
           <a class="nutrition-programs__link" href="form.html">Подобрать программу</a>
-          <div class="nutrition-programs__background"></div>
         </div>
       </section>
       <section class="catalog-link">
@@ -93,50 +94,49 @@
         </div>
       </section>
       <section class="result-program">
-        <div class="result-program__wrapper wrapper">
-          <h2 class="result-program__title">Живой пример</h2>
-          <p class="result-program__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="result-program__list result-program-list">
-            <div class="result-program-list__item">
-              <dt class="result-program-list__parameter">
-                Снижение<br>
-                веса
-              </dt>
-              <dd class="result-program-list__number">
-                5 КГ
-              </dd>
-            </div>
-            <div class="result-program-list__item">
-              <dt class="result-program-list__parameter result-program-list__parameter--time">
-                Затрачено<br>
-                времени
-              </dt>
-              <dd class="result-program-list__number">
-                60 ДНЕЙ
-              </dd>
-            </div>
-          </dl>
-          <p class="result-program__text">
-            Затраты на питание: <span class="result-program__price">15 000 РУБ.</span>
-          </p>
-        </div>
-        <div class="result-program__images">
-          <div class="result-program__images-wrapper">
-            <img class="result-program__img-fat" src="img/result-cat/before-cat-mobile.png" width="311" height="232" alt="Кот с лишним весом">
-            <img class="result-program__img-slim" src="img/result-cat/after-cat-mobile.png" width="251" height="240" alt="Стройный кот">
+        <div class="result-program__box">
+          <div class="result-program__wrapper wrapper">
+            <h2 class="result-program__title">Живой пример</h2>
+            <p class="result-program__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="result-program__list result-program-list">
+              <div class="result-program-list__item">
+                <dt class="result-program-list__parameter">
+                  Снижение<br>
+                  веса
+                </dt>
+                <dd class="result-program-list__number">
+                  5 КГ
+                </dd>
+              </div>
+              <div class="result-program-list__item">
+                <dt class="result-program-list__parameter result-program-list__parameter--time">
+                  Затрачено<br>
+                  времени
+                </dt>
+                <dd class="result-program-list__number">
+                  60 ДНЕЙ
+                </dd>
+              </div>
+            </dl>
+            <p class="result-program__text">
+              Затраты на питание: <span class="result-program__price">15 000 РУБ.</span>
+            </p>
           </div>
-          <div class="changes-toggle">
-            <button class="changes-toggle__it-was-button" type="button">Было</button>
-            <div class="changes-toggle__wrapper scale">
-              <div class="changes-toggle__it-was scale__range-toggle"></div>
+          <div class="result-program__images">
+            <div class="result-program__images-wrapper">
+              <img class="result-program__img-fat" src="img/result-cat/before-cat-mobile.png" width="311" height="232" alt="Кот с лишним весом">
+              <img class="result-program__img-slim" src="img/result-cat/after-cat-mobile.png" width="251" height="240" alt="Стройный кот">
             </div>
-            <button class="changes-toggle__became-button" type="button">Стало</button>
+            <div class="changes-toggle">
+              <button class="changes-toggle__it-was-button" type="button">Было</button>
+              <div class="changes-toggle__wrapper scale">
+                <div class="changes-toggle__it-was scale__range-toggle"></div>
+              </div>
+              <button class="changes-toggle__became-button" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </section>
-      <div class="gray-background">
-        <div class="gray-background__dark"></div>
-      </div>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться?</h2>
         <div class="map__wrapper wrapper">
