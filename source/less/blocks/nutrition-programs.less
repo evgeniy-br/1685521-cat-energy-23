@@ -9,15 +9,11 @@
     background-image: none;
     text-align: left;
   }
-
-  @media (min-width: @desctop-width) {
-    background-image: url("../img/green-cat-mobile.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-  }
 }
 
-.nutrition-programs .wrapper {
+.nutrition-programs__wrapper {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     padding-left: 88px;
     margin-bottom: 541px;
@@ -87,5 +83,17 @@
     font-size: 20px;
     line-height: 20px;
     padding: 12px 27px;
+  }
+}
+
+.nutrition-programs__background {
+  @media (min-width: @desctop-width) {
+    position: absolute;
+    width: 720px;
+    min-height: 694px;
+    background-color: @basic-green;
+    top: -225px;
+    right: -110px;
+    z-index: -1;
   }
 }

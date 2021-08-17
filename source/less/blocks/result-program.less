@@ -21,11 +21,13 @@
   }
 
   @media (min-width: @desctop-width) {
+    position: relative;
     display: grid;
     grid-template-columns: 610px 635px;
     grid-template-rows: 195px 403px;
     width: 1220px;
     margin: 0 auto;
+    background-color: transparent;
   }
 }
 
@@ -40,11 +42,6 @@
     display: block;
     grid-area: ~ "1 / 1 / -1 / 2";
     padding-bottom: 0;
-  }
-}
-
-.result-program__wrapper .wrapper {
-  @media (min-width: @desctop-width) {
     width: auto;
     margin: 0;
   }
@@ -105,6 +102,7 @@
     text-align: right;
     margin-left: auto;
     padding-top: 21px;
+    margin-right: 1px;
   }
 
   @media (min-width: @desctop-width) {
@@ -140,7 +138,7 @@
 .result-program__images-wrapper {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
