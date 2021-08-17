@@ -3,16 +3,25 @@
   background-repeat: no-repeat;
   background-position: top center;
   text-align: center;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
     text-align: left;
   }
+}
+
+.nutrition-programs__wrapper {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 88px;
+    margin-bottom: 541px;
+  }
 
   @media (min-width: @desctop-width) {
-    background-image: url("../img/green-cat-mobile.png");
-    background-repeat: no-repeat;
-    background-position: top right;
+    padding-left: 80px;
+    margin-bottom: 283px;
   }
 }
 
@@ -20,9 +29,20 @@
   .main-title;
   color: @basic-white;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
+  padding-right: 10px;
+  padding-left: 10px;
 
   @media (min-width: @tablet-width) {
+    width: 414px;
+    margin: 0;
+    font-size: 60px;
     color: @basic-black;
+    padding: 0;
+    line-height: 60px;
+    margin-bottom: 41px;
   }
 }
 
@@ -30,11 +50,18 @@
   text-transform: uppercase;
   line-height: 14px;
   color: @basic-white;
-  margin-bottom: 302px;
+  margin: 0;
+  margin-bottom: 313px;
 
   @media (min-width: @tablet-width) {
     color: @basic-black;
-    margin-bottom: 49px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -42,7 +69,7 @@
   color: @basic-white;
   background-color: @basic-green;
   text-transform: uppercase;
-  font-size: 16px;
+  padding: 10px 73px;
 
   &:active {
     .button-active();
@@ -50,5 +77,23 @@
 
   &:hover {
     .button-hover();
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 27px;
+  }
+}
+
+.nutrition-programs__background {
+  @media (min-width: @desctop-width) {
+    position: absolute;
+    width: 720px;
+    min-height: 694px;
+    background-color: @basic-green;
+    top: -225px;
+    right: -110px;
+    z-index: -1;
   }
 }

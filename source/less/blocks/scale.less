@@ -1,0 +1,25 @@
+.scale {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    background-color: @scale-background;
+    border-radius: 6px;
+  }
+}
+
+.scale__range-toggle {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    box-sizing: content-box;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @basic-green;
+    border: 13px solid @basic-white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    top: -18px;
+    left: 50%;
+    margin-left: -17px;
+  }
+}
