@@ -8,30 +8,32 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper wrapper">
-        <a class="page-header__logo-icon" href="#">
-          <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
-        </a>
-        <a class="page-header__logo-icon-text" href="#">
-          <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
-        </a>
+      <div class="page-header__box page-header__box--catalog">
+        <div class="page-header__wrapper wrapper">
+          <a class="page-header__logo-icon" href="#">
+            <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+          </a>
+          <a class="page-header__logo-icon-text" href="#">
+            <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть главное меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link main-nav__link--active-page">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть главное меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link main-nav__link--active-page">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
       <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');
@@ -50,244 +52,341 @@
       </script>
     </header>
     <main class="product-catalog">
-      <h1 class="product-catalog__title wrapper">Каталог продукции</h1>
-      <section class="main-catalog wrapper">
+      <div class="product-catalog__title-box">
+        <h1 class="product-catalog__title wrapper">Каталог продукции</h1>
+      </div>
+      <section class="main-catalog">
         <h2 class="visually-hidden">Основной каталог</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy PRO 500 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                500 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Курица
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                700 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Оранжевый стакан с надписью 'Cat Energy. Курица'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy PRO 500 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    500 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Курица
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    700 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy PRO 1000 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                1000 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Курица
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                1000 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Оранжевый стакан с надписью 'Cat Energy. Курица'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy PRO 1000 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Курица
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    1000 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy PRO 500 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                500 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Рыба
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                700 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Зелёный стакан с надписью 'Cat Energy. Рыба'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy PRO 500 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    500 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Рыба
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    700 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy PRO 1000 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                1000 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Рыба
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                1000 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Зелёный стакан с надписью 'Cat Energy. Рыба'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy PRO 1000 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Рыба
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    1000 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy Slim 500 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                500 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Гречка
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                400 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Синий стакан с надписью 'Cat Energy. Гречка'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy Slim 500 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    500 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Гречка
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    400 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy Slim 1000 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                1000 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Гречка
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                700 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Синий стакан с надписью 'Cat Energy. Гречка'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy Slim 1000 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Гречка
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    700 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-item">
-            <h3 class="main-catalog-item__title">Cat Energy Slim 500 г</h3>
-            <dl class="main-catalog-item__list">
-              <dt class="main-catalog-item__parameter">
-                Масса
-              </dt>
-              <dd class="main-catalog-item__value">
-                500 г
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Вкус
-              </dt>
-              <dd class="main-catalog-item__value">
-                Рис
-              </dd>
-              <dt class="main-catalog-item__parameter">
-                Цена
-              </dt>
-              <dd class="main-catalog-item__value">
-                500 Р.
-              </dd>
-            </dl>
-            <a class="button-order" href="#">Заказать</a>
+            <div class="main-catalog-item-wrapper">
+              <div class="main-catalog__img">
+                <img src="#" width="140" height="120" alt="Фиолетовый стакан с надписью 'Cat Energy. Рис'">
+              </div>
+              <h3 class="main-catalog-item__title">Cat Energy Slim 500 г</h3>
+              <dl class="main-catalog-item__list">
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Масса
+                  </dt>
+                  <dd class="main-catalog-item__value main-catalog-item__value--weight">
+                    500 г
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Вкус
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    Рис
+                  </dd>
+                </div>
+                <div class="main-catalog-item__list-wrapper">
+                  <dt class="main-catalog-item__parameter">
+                    Цена
+                  </dt>
+                  <dd class="main-catalog-item__value">
+                    500 Р.
+                  </dd>
+                </div>
+              </dl>
+              <a class="button-order" href="#">Заказать</a>
+            </div>
           </li>
           <li class="main-catalog__item main-catalog-more">
-            <h3 class="main-catalog-more__title">Показать еще 100500 товаров</h3>
-            <p class="main-catalog-more__text">На самом деле вкусов гораздо больше!</p>
-            <a class="main-catalog-more__link" href="#">Показать все</a>
+            <div class="main-catalog-more-wrapper">
+              <svg class="main-catalog-more-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+                <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+              </svg>
+              <h3 class="main-catalog-more__title">Показать еще 100500 товаров</h3>
+              <p class="main-catalog-more__text">На самом деле вкусов гораздо больше!</p>
+              <a class="main-catalog-more__link" href="#">Показать все</a>
+            </div>
           </li>
         </ul>
       </section>
-      <div class="wrapper">
-        <section class="additional-catalog">
-          <h2 class="additional-catalog__title">Дополнительные товары</h2>
+      <section class="additional-catalog">
+        <div  class="additional-catalog__title-wrapper">
+          <div class="additional-catalog__title-container">
+            <h2 class="additional-catalog__title">Дополнительные товары</h2>
+          </div>
+        </div>
+        <div class="additional-catalog__list-offers-wrapper">
           <ul class="additional-catalog__list">
             <li class="additional-catalog__item additional-catalog-item">
               <h3 class="additional-catalog-item__title">Сахарозаменитель</h3>
               <dl class="additional-catalog-item__list">
-                <dt class="additional-catalog-item__amount">
-                  1 упаковка (100 г)
-                </dt>
-                <dd class="additional-catalog-item__price">
-                  200 Р.
-                </dd>
+                <div class="additional-catalog-item__list-wrapper">
+                  <dt class="additional-catalog-item__amount">
+                    1 упаковка (100 г)
+                  </dt>
+                  <dd class="additional-catalog-item__price">
+                    200 Р.
+                  </dd>
+                </div>
               </dl>
-              <a class="button-order" href="#">Заказать</a>
+              <a class="button-order button-order--additional-catalog" href="#">Заказать</a>
             </li>
-            <li class="additional-catalog__item additional-catalog-item">
-              <h3 class="additional-catalog-item__title">Питьевая вода</h3>
+            <li class="additional-catalog__item additional-catalog-item additional-catalog-item--water">
+              <h3 class="additional-catalog-item__title additional-catalog-item__title--water">Питьевая вода</h3>
               <dl class="additional-catalog-item__list">
-                <dt class="additional-catalog-item__amount">
-                  5 литров
-                </dt>
-                <dd class="additional-catalog-item__price">
-                  50 Р.
-                </dd>
+                <div class="additional-catalog-item__list-wrapper">
+                  <dt class="additional-catalog-item__amount">
+                    5 литров
+                  </dt>
+                  <dd class="additional-catalog-item__price">
+                    50 Р.
+                  </dd>
+                </div>
               </dl>
-              <a class="button-order" href="#">Заказать</a>
+              <a class="button-order button-order--additional-catalog" href="#">Заказать</a>
             </li>
             <li class="additional-catalog__item additional-catalog-item">
               <h3 class="additional-catalog-item__title">Молоко</h3>
               <dl class="additional-catalog-item__list">
-                <dt class="additional-catalog-item__amount">
-                  1 литр
-                </dt>
-                <dd class="additional-catalog-item__price">
-                  100 Р.
-                </dd>
+                <div class="additional-catalog-item__list-wrapper">
+                  <dt class="additional-catalog-item__amount">
+                    1 литр
+                  </dt>
+                  <dd class="additional-catalog-item__price">
+                    100 Р.
+                  </dd>
+                </div>
               </dl>
-              <a class="button-order" href="#">Заказать</a>
+              <a class="button-order button-order--additional-catalog" href="#">Заказать</a>
             </li>
             <li class="additional-catalog__item additional-catalog-item">
               <h3 class="additional-catalog-item__title">Витамины</h3>
               <dl class="additional-catalog-item__list">
-                <dt class="additional-catalog-item__amount">
-                  1 упаковка (30 г)
-                </dt>
-                <dd class="additional-catalog-item__price">
-                  300 Р.
-                </dd>
+                <div class="additional-catalog-item__list-wrapper">
+                  <dt class="additional-catalog-item__amount">
+                    1 упаковка (30 г)
+                  </dt>
+                  <dd class="additional-catalog-item__price">
+                    300 Р.
+                  </dd>
+                </div>
               </dl>
-              <a class="button-order" href="#">Заказать</a>
+              <a class="button-order button-order--additional-catalog" href="#">Заказать</a>
             </li>
           </ul>
-        </section>
-        <section class="offers">
-          <h2 class="visually-hidden">Акции</h2>
-          <p class="offers__text">Закажите все и получите чехол для кота в подарок!</p>
-        </section>
-      </div>
+          <div class="offers">
+            <h2 class="visually-hidden">Акции</h2>
+            <p class="offers__text">Закажите все <br> и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+      </section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться?</h2>
         <div class="wrapper map__wrapper">

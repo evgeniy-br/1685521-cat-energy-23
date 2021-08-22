@@ -63,6 +63,7 @@
 
 .main-nav__list {
   .dropping-list();
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -72,7 +73,6 @@
   }
 
   @media (min-width: @desctop-width) {
-    background-color: @basic-green;
     width: 479px;
   }
 }
@@ -146,9 +146,12 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: @basic-white;
     border: none;
     padding-bottom: 8px;
+
+    &--main {
+      color: @basic-white;
+    }
   }
 
   &:nth-child(1) {
@@ -188,10 +191,14 @@
       left: 0;
       height: 2px;
       background-color: @basic-green;
+    }
+  }
+}
 
-      @media (min-width: @desctop-width) {
-        background-color: @basic-white;
-      }
+.main-nav__link--main {
+  @media (min-width: @desctop-width) {
+    &::before {
+      background-color: @basic-white;
     }
   }
 }
