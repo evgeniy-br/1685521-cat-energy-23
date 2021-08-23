@@ -44,6 +44,17 @@
   }
 }
 
+.page-header__box--form::before {
+  .gray-line();
+  right: 0;
+  left: 0;
+  top: 66px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .page-header__wrapper {
   display: flex;
 

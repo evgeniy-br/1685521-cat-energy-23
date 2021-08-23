@@ -11,6 +11,11 @@
       border-bottom: none;
       margin-bottom: 0;
     }
+
+    @media (min-width: @desctop-width) {
+      border-bottom: 1px solid @special-light-neutral;
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -28,6 +33,10 @@
     padding: 16px 0 16px;
     justify-content: space-between;
     align-items: center;
+
+    &:first-child {
+      border-top: 1px solid @special-light-neutral;
+    }
   }
 }
 
@@ -39,7 +48,7 @@
   }
 
   @media (min-width: @desctop-width) {
-    padding-top: 15px;
+    padding: 15px 0 15px;
   }
 }
 
