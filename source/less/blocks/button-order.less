@@ -1,5 +1,17 @@
 .button-order {
+  grid-area: ~ "-2 / 1 / -1 / -1";
   .button-order-style();
+  text-align: center;
+  padding: 10px 109px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 93px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 10px 53px;
+    margin-right: 6px;
+  }
 }
 
 .button-order:hover {
@@ -8,4 +20,17 @@
 
 .button-order:active {
   .button-active();
+}
+
+.button-order--additional-catalog {
+  padding: 8px 109px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 286px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 10px 91px;
+    margin: 0;
+  }
 }

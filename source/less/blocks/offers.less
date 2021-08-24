@@ -1,15 +1,65 @@
 .offers {
-  background-image: url("../img/gift-green-cat-mobile.png");
+  background-image: url("../img/gift-green-cat/gift-green-cat-mobile.png");
   background-repeat: no-repeat;
+  min-height: 290px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/gift-green-cat/gift-green-cat-tablet.png");
+    min-height: 200px;
+    width: 708px;
+    margin-bottom: 76px;
+  }
 
   @media (min-width: @desctop-width) {
     display: inline-block;
+    vertical-align: top;
+    background-image: url("../img/gift-green-cat/gift-green-cat-desctop.png");
+    min-height: 290px;
+    width: 245px;
   }
 }
 
 .offers__text {
+  position: relative;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: @basic-white;
   font-family: "Arial", sans-serif;
+  padding: 187px 61px 43px 58px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/gift-green-cat/icon-gift.svg");
+    top: 98px;
+    right: 50%;
+    margin: -39px;
+
+    @media (min-width: @tablet-width) {
+      top: 49%;
+      left: 118px;
+    }
+
+    @media (min-width: @desctop-width) {
+      top: 97px;
+      left: 51%;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 72px 124px 69px 422px;
+    text-align: start;
+  }
+
+  @media (min-width: @desctop-width) {
+    text-align: center;
+    padding: 188px 43px 42px 41px;
+  }
 }
