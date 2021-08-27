@@ -91,30 +91,62 @@
   display: flex;
 
   @media (min-width: @tablet-width) {
-    width: 154px;
     min-height: 36px;
-    padding-left: 30px;
   }
 }
 
 .page-header__logo-icon {
   padding-top: 10px;
   margin-right: 56px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .page-header__img-logo {
   width: 34px;
   height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
 }
 
 .page-header__logo-icon-text {
   padding-top: 24px;
   padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__img-text {
   width: 101px;
   height: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-footer__img-text {

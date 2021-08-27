@@ -15,7 +15,11 @@
       <div class="page-header__box page-header__box--main">
         <div class="page-header__wrapper wrapper">
           <a class="page-header__logo-icon" href="#">
-            <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="page-header__img-logo" src="img/logo/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+            </picture>
           </a>
           <a class="page-header__logo-icon-text" href="#">
             <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
@@ -133,7 +137,6 @@
                 <source media="(min-width: 768px)" srcset="img/result-cat/cat-result-tablet.png 1x, img/result-cat/cat-result-tablet@2x.png 2x">
                 <img class="result-program__img-fat" src="img/result-cat/cat-before-mobile.png" srcset="img/result-cat/cat-before-mobile2x.png 2x" width="311" height="232" alt="Кот с лишним весом">
               </picture>
-              <img class="result-program__img-slim" src="img/result-cat/after-cat-mobile.png" width="251" height="240" alt="Стройный кот">
             </div>
             <div class="changes-toggle">
               <button class="changes-toggle__it-was-button" type="button">Было</button>
