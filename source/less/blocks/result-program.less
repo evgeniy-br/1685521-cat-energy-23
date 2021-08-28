@@ -1,5 +1,5 @@
 .result-program {
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     position: relative;
 
     &::after {
@@ -31,13 +31,13 @@
       left: 0;
       right: 0;
 
-      @media (min-width: @desctop-width) {
+      @media (min-width: @desktop-width) {
         display: none;
       }
     }
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 610px 635px;
     grid-template-rows: 195px 403px;
@@ -54,7 +54,7 @@
     padding-bottom: 172px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     display: block;
     grid-area: ~ "1 / 1 / -1 / 2";
     padding-bottom: 0;
@@ -80,7 +80,7 @@
     margin-bottom: 64px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     padding-top: 0;
     margin-bottom: 146px;
   }
@@ -98,7 +98,7 @@
     margin-bottom: 44px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     width: 436px;
     margin-bottom: 74px;
   }
@@ -121,7 +121,7 @@
     margin-right: 1px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     width: auto;
     text-align: left;
     margin: 0;
@@ -134,19 +134,19 @@
     margin-top: 8px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 59px;
   }
 }
 
 .result-program__images {
   @media (min-width: @tablet-width) {
+    position: relative;
     background-color: @special-light;
     min-height: 462px;
   }
 
-  @media (min-width: @desctop-width) {
-    position: relative;
+  @media (min-width: @desktop-width) {
     background-color: transparent;
     grid-area: ~ "1 / 2 / -1 / -1";
 
@@ -170,21 +170,29 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    margin-bottom: 127px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -352px;
   }
 
-  @media (min-width: @desctop-width) {
-    width: auto;
+  @media (min-width: @desktop-width) {
+    margin-left: -357px;
+    top: -56px;
   }
 }
 
 .result-program__img-fat {
   width: 311px;
   height: 232px;
-}
 
-.result-program__img-slim {
-  display: none;
-  width: 251px;
-  height: 240px;
+  @media (min-width: @tablet-width) {
+    width: 706px;
+    height: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+    height: 656px;
+  }
 }

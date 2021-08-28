@@ -1,12 +1,12 @@
 .page-header {
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     position: relative;
 
     &--main::before {
       content: "";
       position: absolute;
       min-height: 694px;
-      background-image: linear-gradient(to right, transparent 50%, @basic-green 50%);
+      background-image: linear-gradient(to right, transparent 50%, @basic-green-dark 50%);
       top: 0;
       left: 0;
       right: 0;
@@ -18,6 +18,7 @@
 .page-header__box {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -27,7 +28,7 @@
     margin-bottom: 55px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 106px;
@@ -35,11 +36,42 @@
     &--form {
       margin-bottom: 65px;
     }
+
+    &--main::before {
+      content: "";
+      position: absolute;
+      background: url("../img/green-cat-main/green-cat-main-desktop.png");
+      background-repeat: no-repeat;
+      width: 720px;
+      height: 694px;
+      right: -110px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/green-cat-main/green-cat-main-desktop@2x.png");
+        background-size: 720px auto;
+      }
+    }
+
+    &--main::after {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      background: url("../img/bank-cat-energy/bank-cat-energy-desktop.png");
+      background-repeat: no-repeat;
+      top: 142px;
+      left: 448px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bank-cat-energy/bank-cat-energy-desktop@2x.png");
+        background-size: 552px auto;
+      }
+    }
   }
 }
 
 .page-header__box--catalog {
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 71px;
   }
 }
@@ -59,30 +91,62 @@
   display: flex;
 
   @media (min-width: @tablet-width) {
-    width: 154px;
     min-height: 36px;
-    padding-left: 30px;
   }
 }
 
 .page-header__logo-icon {
   padding-top: 10px;
   margin-right: 56px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .page-header__img-logo {
   width: 34px;
   height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
 }
 
 .page-header__logo-icon-text {
   padding-top: 24px;
   padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__img-text {
   width: 101px;
   height: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-footer__img-text {

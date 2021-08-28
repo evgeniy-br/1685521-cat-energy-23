@@ -2,16 +2,24 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmaifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--main">
-      <div class="page-header__box">
+      <div class="page-header__box page-header__box--main">
         <div class="page-header__wrapper wrapper">
           <a class="page-header__logo-icon" href="#">
-            <img class="page-header__img-logo" src="img/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="page-header__img-logo" src="img/logo/logo.svg" width="34" height="38" alt="Логотип кэт энерджи">
+            </picture>
           </a>
           <a class="page-header__logo-icon-text" href="#">
             <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
@@ -124,8 +132,11 @@
           </div>
           <div class="result-program__images">
             <div class="result-program__images-wrapper">
-              <img class="result-program__img-fat" src="img/result-cat/before-cat-mobile.png" width="311" height="232" alt="Кот с лишним весом">
-              <img class="result-program__img-slim" src="img/result-cat/after-cat-mobile.png" width="251" height="240" alt="Стройный кот">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/result-cat/cat-result-desktop.png 1x, img/result-cat/cat-result-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/result-cat/cat-result-tablet.png 1x, img/result-cat/cat-result-tablet@2x.png 2x">
+                <img class="result-program__img-fat" src="img/result-cat/cat-before-mobile.png" srcset="img/result-cat/cat-before-mobile2x.png 2x" width="311" height="232" alt="Кот с лишним весом">
+              </picture>
             </div>
             <div class="changes-toggle">
               <button class="changes-toggle__it-was-button" type="button">Было</button>

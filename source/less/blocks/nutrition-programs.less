@@ -1,13 +1,36 @@
 .nutrition-programs {
-  background-image: url("../img/green-cat-mobile.png");
+  background:
+    url("../img/bank-cat-energy/bank-cat-energy-mobile.png") ~ "50% 167px",
+    url("../img/green-cat-main/green-cat-main-mobile.png") top center,
+    linear-gradient(to bottom, @basic-green-dark 302px, @basic-white 302px);
   background-repeat: no-repeat;
-  background-position: top center;
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../img/bank-cat-energy/bank-cat-energy-mobile@2x.png") ~ "50% 167px / 280px auto",
+      url("../img/green-cat-main/green-cat-main-mobile2x.png") ~ "50% 0 / 320px auto",
+      linear-gradient(to bottom, @basic-green-dark 302px, @basic-white 302px);
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
-    background-image: none;
+    margin-bottom: 0;
+    padding-bottom: 540px;
+    background: url("../img/bank-cat-energy/bank-cat-energy-tablet.png") ~ "50% 200px";
     text-align: left;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bank-cat-energy/bank-cat-energy-tablet@2x.png") ~ "50% 200px / 709px auto";
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 0;
+      background: none;
+    }
   }
 }
 
@@ -15,10 +38,9 @@
   @media (min-width: @tablet-width) {
     position: relative;
     padding-left: 88px;
-    margin-bottom: 541px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     padding-left: 80px;
     margin-bottom: 283px;
   }
@@ -59,7 +81,7 @@
     line-height: 20px;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 67px;
   }
 }

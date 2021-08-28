@@ -1,24 +1,40 @@
 .offers {
   background-image: url("../img/gift-green-cat/gift-green-cat-mobile.png");
   background-repeat: no-repeat;
+  background-color: @basic-green-dark;
   min-height: 290px;
   margin: 0 auto;
   margin-bottom: 35px;
   width: 280px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-green-cat/gift-green-cat-mobile@2x.png");
+    background-size: 280px auto;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/gift-green-cat/gift-green-cat-tablet.png");
     min-height: 200px;
     width: 708px;
     margin-bottom: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-green-cat/gift-green-cat-tablet@2x.png");
+      background-size: 708px auto;
+    }
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     display: inline-block;
     vertical-align: top;
-    background-image: url("../img/gift-green-cat/gift-green-cat-desctop.png");
+    background-image: url("../img/gift-green-cat/gift-green-cat-desktop.png");
     min-height: 290px;
     width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-green-cat/gift-green-cat-desktop@2x.png");
+      background-size: 245px auto;
+    }
   }
 }
 
@@ -47,7 +63,7 @@
       left: 118px;
     }
 
-    @media (min-width: @desctop-width) {
+    @media (min-width: @desktop-width) {
       top: 97px;
       left: 51%;
     }
@@ -58,7 +74,7 @@
     text-align: start;
   }
 
-  @media (min-width: @desctop-width) {
+  @media (min-width: @desktop-width) {
     text-align: center;
     padding: 188px 43px 42px 41px;
   }
