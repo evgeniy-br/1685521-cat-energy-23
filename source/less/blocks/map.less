@@ -2,6 +2,7 @@
   background-image: url("../img/map/map-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom;
+  min-height: 476px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map/map-mobile@2x.png");
@@ -9,6 +10,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    min-height: 601px;
     background-image: url("../img/map/map-tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -18,6 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 400px;
     background-image: url("../img/map/map-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -40,15 +43,4 @@
 
 .map--background {
   background-color: @basic-extra-light;
-}
-
-.map__img {
-  display: block;
-  width: 320px;
-  height: 362px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
 }
