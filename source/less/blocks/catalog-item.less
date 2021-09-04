@@ -140,22 +140,26 @@
   &::after {
     content: "";
     position: absolute;
-    width: 32px;
+    width: 35px;
     height: 12px;
     background-image: url("../img/program-select-icon/program-pro-icon-arrow.svg");
     background-repeat: no-repeat;
-    right: -2px;
+    right: -5px;
     top: 6px;
 
     @media (min-width: @tablet-width) {
       top: 8px;
-      right: -10px;
+      right: -13px;
     }
 
     @media (min-width: @desktop-width) {
       top: 8px;
       right: -12px;
     }
+  }
+
+  &:hover::after {
+    background-image: url("../img/program-select-icon/program-pro-icon-arrow-long.svg");
   }
 
   @media (min-width: @tablet-width) {
@@ -167,4 +171,8 @@
 
 .catalog-item__link:active {
   color: @basic-black-extra-opacity;
+
+  &::after {
+    opacity: 0.3;
+  }
 }

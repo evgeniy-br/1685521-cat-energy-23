@@ -4,14 +4,16 @@
 }
 
 .main-nav__toggle {
-  display: block;
-  position: absolute;
-  width: 24px;
-  height: 18px;
-  top: -43px;
-  right: 20px;
-  border: none;
-  background-color: @basic-white;
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: -43px;
+    right: calc(50% - 140px);
+    border: none;
+    background-color: @basic-white;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -23,14 +25,16 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: @basic-black;
-  box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @basic-black;
+    box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -40,24 +44,27 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  height: 24px;
+  @media (max-width: @mobile-width-only) {
+    height: 24px;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background-color: @basic-black;
-    left: 0;
-  }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: @basic-black;
+      top: 8px;
+      left: 0;
+    }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+    &::before {
+      transform: rotate(45deg);
+    }
 
-  &::after {
-    transform: rotate(-45deg);
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -78,9 +85,11 @@
 }
 
 .main-nav--opened .main-nav__list {
-  position: absolute;
-  background-color: @basic-white;
-  width: 100%;
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    background-color: @basic-white;
+    width: 100%;
+  }
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -172,9 +181,9 @@
     }
   }
 
-  &:disabled {
+  &:active {
     @media (min-width: @tablet-width) {
-      color: @basic-black-light-opacity;
+      color: @basic-black-extra-opacity;
     }
   }
 }
@@ -199,6 +208,14 @@
   @media (min-width: @desktop-width) {
     &::before {
       background-color: @basic-white;
+    }
+
+    &:hover {
+      color: @basic-white-opacity;
+    }
+
+    &:active {
+      color: @basic-white-extra-opacity;
     }
   }
 }

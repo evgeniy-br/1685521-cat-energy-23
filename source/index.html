@@ -83,7 +83,10 @@
             <li class="advantages__item advantages__item--cutlery">Замените один-два приема <br>
               обычной еды на наше <br>
               функциональное питание.</li>
-            <li class="advantages__item advantages__item--time">Уже через месяц наслаждайтесь <br> изменениями к лучшему <br class="advantages__wrap"> вашего питомца!</li>
+            <li class="advantages__item advantages__item--time">
+              Уже через месяц наслаждайтесь изменениями к лучшему&nbsp;
+              <br class="advantages__item--time-wrap">
+              вашего питомца!</li>
           </ol>
         </div>
       </section>
@@ -119,17 +122,28 @@
           <div class="result-program__images">
             <div class="result-program__images-wrapper">
               <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="img/result-cat/cat-result-desktop.webp 1x, img/result-cat/cat-result-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/result-cat/cat-result-tablet.webp 1x, img/result-cat/cat-result-tablet@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/result-cat/cat-result-desktop.png 1x, img/result-cat/cat-result-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/result-cat/cat-result-tablet.png 1x, img/result-cat/cat-result-tablet@2x.png 2x">
+                <source type="image/webp" srcset="img/result-cat/cat-before-mobile.webp 1x, img/result-cat/cat-before-mobile@2x.webp 2x">
                 <img class="result-program__img-fat" src="img/result-cat/cat-before-mobile.png" srcset="img/result-cat/cat-before-mobile2x.png 2x" width="311" height="232" alt="Кот с лишним весом">
+              </picture>
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="img/result-cat/cat-result-desktop.webp 1x, img/result-cat/cat-result-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/result-cat/cat-result-tablet.webp 1x, img/result-cat/cat-result-tablet@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/result-cat/cat-result-desktop.png 1x, img/result-cat/cat-result-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/result-cat/cat-result-tablet.png 1x, img/result-cat/cat-result-tablet@2x.png 2x">
+                <source type="image/webp" srcset="img/result-cat/cat-after-mobile.webp 1x, img/result-cat/cat-after-mobile@2x.webp 2x">
+                <img class="result-program__img-slim" src="img/result-cat/cat-after-mobile.png" srcset="img/result-cat/cat-after-mobile2x.png 2x" width="251" height="240" alt="Стройный кот">
               </picture>
             </div>
             <div class="changes-toggle">
-              <button class="changes-toggle__it-was-button" type="button">Было</button>
+              <button class="changes-toggle__button changes-toggle__it-was-button" type="button">Было</button>
               <div class="changes-toggle__wrapper scale">
                 <div class="changes-toggle__it-was scale__range-toggle"></div>
               </div>
-              <button class="changes-toggle__became-button" type="button">Стало</button>
+              <button class="changes-toggle__button changes-toggle__became-button" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -150,6 +164,7 @@
             </address>
           </div>
         </div>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5335.599402474825!2d30.317075323170453!3d59.93892349528905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630680437570!5m2!1sru!2sru" width="320" height="362" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -191,13 +206,11 @@
         <section class="page-footer__copyright copyright">
           <h2 class="visually-hidden">Разработчик сайта</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright-icon" width="27" height="34" fill="#666666">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__icon" width="27" height="34" fill="#666666">
               <use xlink:href="img/sprite.svg#copyright-icon"></use>
             </svg>
             <span class="visually-hidden">Логотип HTML Academy</span>
-          </a>
-          <a class="copyright__text-link" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
           </a>
         </section>
       </div>
