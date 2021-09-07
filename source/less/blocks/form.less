@@ -246,12 +246,12 @@
 .form__control--email {
   width: 219px;
   margin-left: 9px;
-  padding: 13px 14px 13px;
+  padding: 12px 41px 14px 15px;
 
   @media (min-width: @tablet-width) {
     width: 551px;
     margin-bottom: 6px;
-    padding: 10px 20px 10px;
+    padding: 10px 50px 10px 20px;
     margin-left: 19px;
   }
 
@@ -265,11 +265,13 @@
 .form__control--phone {
   width: 204px;
   margin-left: 7px;
+  padding: 12px 41px 14px 15px;
 
   @media (min-width: @tablet-width) {
     width: 535px;
     margin-bottom: 89px;
     margin-left: 12px;
+    padding: 10px 50px 10px 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -386,6 +388,7 @@
 
 .form__control::placeholder {
   color: @special-extra-dark;
+  opacity: 1;
 }
 
 .form__label {
@@ -534,7 +537,7 @@
   }
 }
 
-.form__control--email:focus + .form__icon-email {
+:focus + .form__icon-email {
   stroke: @basic-green;
 }
 

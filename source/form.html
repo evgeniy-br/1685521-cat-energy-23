@@ -24,7 +24,7 @@
             <img class="page-header__img-text" src="img/text-logo/header-text-logo-mobile.svg" width="101" height="18" alt="Надпись кэт энерджи">
           </a>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть главное меню</span>
           </button>
@@ -55,11 +55,11 @@
               <ul class="form__list">
                 <li class="form__item form__item--text">
                   <label class="form__label form__label--text" for="name">Имя:<sup class="form__label-sup">*</sup></label>
-                  <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required>
+                  <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required> <!-- Состояние ошибки при добавлении class="form__control--error" -->
                 </li>
                 <li class="form__item form__item--text">
                   <label class="form__label form__label--text form__label--text-weight" for="weight">Вес (КГ):<sup class="form__label-sup">*</sup></label>
-                  <input class="form__control form__control--text form__control--text-weight" type="text" id="weight" name="weight" placeholder="7" required>
+                  <input class="form__control form__control--text form__control--text-weight" type="text" id="weight" name="weight" placeholder="7" required> <!-- Состояние ошибки при добавлении class="form__control--error" -->
                 </li>
                 <li class="form__item form__item--text">
                   <label class="form__label form__label--text form__label--text-age" for="age">Возраст (лет):</label>
@@ -94,14 +94,14 @@
               <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--email">
                   <label class="form__label form__label--email" for="email">e-mail:<sup class="form__label-sup">*</sup></label>
-                  <input class="form__control form__control--text form__control--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="form__control form__control--text form__control--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required> <!-- Состояние ошибки при добавлении class="form__control--error" -->
                   <svg class="form__icon-email" width="19" height="14" fill="none" stroke="#222222">
                     <use xlink:href="img/sprite.svg#letter"></use>
                   </svg>
                 </li>
                 <li class="form__item form__item--phone">
                   <label class="form__label" for="phone">Телефон:<sup class="form__label-sup">*</sup></label>
-                  <input class="form__control form__control--text form__control--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <input class="form__control form__control--text form__control--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required> <!-- Состояние ошибки при добавлении class="form__control--error" -->
                   <svg class="form__icon-phone" width="20" height="21">
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
@@ -174,7 +174,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper">
       <div class="page-footer__logo-icon-text-wrapper">
-        <a class="page-footer__logo-icon-text" href="#">
+        <a class="page-footer__logo-icon-text" href="index.html">
           <img class="page-footer__img-text" src="img/text-logo/footer-text-logo-mobile.svg" width="128" height="24" alt="Надпись кэт энерджи">
         </a>
       </div>
