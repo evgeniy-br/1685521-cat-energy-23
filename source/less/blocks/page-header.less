@@ -6,11 +6,17 @@
       content: "";
       position: absolute;
       min-height: 694px;
-      background-image: linear-gradient(to right, transparent 50%, @basic-green-dark 50%);
+      background: url("../img/green-cat-main/green-cat-main-desktop.png") right no-repeat,
+        linear-gradient(to right, transparent 50%, @basic-green-dark 50%);
       top: 0;
       left: 0;
       right: 0;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/green-cat-main/green-cat-main-desktop@2x.png")  no-repeat ~ "right / 720px auto",
+          linear-gradient(to right, transparent 50%, @basic-green-dark 50%);
+      }
     }
   }
 }
@@ -35,21 +41,6 @@
 
     &--form {
       margin-bottom: 65px;
-    }
-
-    &--main::before {
-      content: "";
-      position: absolute;
-      background: url("../img/green-cat-main/green-cat-main-desktop.png");
-      background-repeat: no-repeat;
-      width: 720px;
-      height: 694px;
-      right: -110px;
-
-      @media (min-resolution: 2dppx) {
-        background: url("../img/green-cat-main/green-cat-main-desktop@2x.png");
-        background-size: 720px auto;
-      }
     }
 
     &--main::after {

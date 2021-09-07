@@ -6,6 +6,14 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 361px;
+
+    &:hover .changes-toggle__button::after {
+      border-bottom: 1px solid @basic-black-medium-opacity;
+    }
+
+    &:active .changes-toggle__button::after {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -13,6 +21,19 @@
     padding-bottom: 67px;
     padding-left: 18px;
   }
+}
+
+.changes-toggle:active .changes-toggle__it-was,
+.changes-toggle:active .changes-toggle__became {
+  @media (min-width: @tablet-width) {
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.16),
+      0 0 0 1px @basic-green;
+  }
+}
+
+.changes-toggle__button {
+  user-select: none;
 }
 
 .changes-toggle__wrapper {

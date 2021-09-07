@@ -61,14 +61,14 @@ const optimizeImages = () => {
   .pipe(gulp.dest("build/img"))
 }
 
-exports.images = optimizeImages;
+exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
    .pipe(gulp.dest("build/img"))
 }
 
-exports.images = copyImages;
+exports.copyImages = copyImages;
 
 // WebP
 
@@ -83,7 +83,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons-footer/*.svg")
+  return gulp.src("source/img/icons-sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
