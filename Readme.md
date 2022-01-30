@@ -1,4 +1,1 @@
-# Личный проект «Кэт энерджи»
-
-* Разработал: [Евгений Братков](https://up.htmlacademy.ru/adaptive/23/user/1685521).
-
+# Посмотреть проект на GitHub Pages: https://evgeniy-br.github.io/Cat-Energy/
