@@ -16,6 +16,7 @@
 * SCSS
 * БЭМ
 * Gulp
+* Pixel Perfect
 
 Использовал инструменты:
 
