@@ -1,6 +1,6 @@
 # Cat-Energy
  
-## Посмотреть как работает проект можно на [GitHub Pages](https://evgeniy-br.github.io/Cat-Energy/)
+## Публикация проекта на [GitHub Pages](https://evgeniy-br.github.io/Cat-Energy/)
 
 ***Адаптивная вёрстка сайта интернет-магазина, который поможет подобрать и заказать систему питания для кота.***
 
